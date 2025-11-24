@@ -10,7 +10,7 @@ app.use("/post", postsRouter);
 app.use("/auth", authRouter);
 
 app.use((req, res, next) => {
-  res.status(404);
+  res.sendStatus(404);
 });
 
 app.listen(8080);
